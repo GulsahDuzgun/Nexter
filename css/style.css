@@ -51,12 +51,12 @@ body {
   grid-column: col-start 7 / full-end; }
 
 .features {
-  grid-column: center-start/center-end;
-  margin: 16rem auto;
+  grid-column: center-start / center-end;
+  margin: 16rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-rows: auto auto;
-  gap: 4rem 8rem;
+  gap: 4rem 6rem;
   align-items: start; }
 
 .feature {
