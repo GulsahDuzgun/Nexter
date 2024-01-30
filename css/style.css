@@ -156,9 +156,24 @@ body {
   font-style: italic;
   margin-bottom: 4.2rem; }
 
+.homes {
+  grid-column: center-start / center-end;
+  margin: 16rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 4rem 8rem; }
+
 .home {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  background-color: #f9f7f6; }
+  .home__img {
+    width: 100%; }
+  .home__like {
+    width: 3.2rem;
+    height: 3.2rem; }
+  .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+    fill: "Nunito", sans-serif;
+    width: 3.2rem;
+    height: 3.2rem; }
 
 .gallery {
   background-color: #101d2c;
