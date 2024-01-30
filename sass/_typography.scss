@@ -9,10 +9,24 @@
 
 .heading-2 {
   @extend %heading;
+  font-size: 3.2rem;
+  font-style: italic;
+  line-height: 1;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
 }
 
 .heading-3 {
   @extend %heading;
+  font-size: 2rem;
+  color: $color-primary;
+  text-transform: uppercase;
 }
 
 .heading-4 {
@@ -27,3 +41,44 @@
     color: $color-grey-dark-1;
   }
 }
+
+.btn {
+  background-color: $color-primary;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.mb-hg {
+  margin-bottom: 6.4rem;
+}
+
+.mb-lg {
+  margin-bottom: 4.8rem;
+}
+
+.mb-md {
+  margin-bottom: 3.2rem;
+}
+
+.mb-sm {
+  margin-bottom: 2.4rem;
+}
+
+/*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/

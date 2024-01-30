@@ -7,5 +7,22 @@
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+    padding: 9.6rem 10%;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: start;
+
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4.2rem;
   }
 }

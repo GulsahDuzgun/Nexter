@@ -31,6 +31,20 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-2 {
+  font-size: 3.2rem;
+  font-style: italic;
+  line-height: 1; }
+  .heading-2--light {
+    color: #f9f7f6; }
+  .heading-2--dark {
+    color: #54483a; }
+
+.heading-3 {
+  font-size: 2rem;
+  color: #c69963;
+  text-transform: uppercase; }
+
 .heading-4 {
   font-size: 1.8rem; }
   .heading-4--light {
@@ -38,6 +52,39 @@ body {
   .heading-4--dark {
     color: #54483a; }
 
+.btn {
+  background-color: #c69963;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn:hover {
+    background-color: #b28451; }
+
+.mb-hg {
+  margin-bottom: 6.4rem; }
+
+.mb-lg {
+  margin-bottom: 4.8rem; }
+
+.mb-md {
+  margin-bottom: 3.2rem; }
+
+.mb-sm {
+  margin-bottom: 2.4rem; }
+
+/*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start/sidebar-end;
@@ -78,7 +125,17 @@ body {
 
 .story__content {
   background-color: #f9f7f6;
-  grid-column: col-start 5 / full-end; }
+  grid-column: col-start 5 / full-end;
+  padding: 9.6rem 10%;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  align-items: center; }
+
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4.2rem; }
 
 .home {
   background-color: #101d2c;
