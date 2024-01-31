@@ -31,6 +31,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: 4.2rem;
+  line-height: 1;
+  color: #f9f7f6; }
+
 .heading-2 {
   font-size: 3.2rem;
   font-style: italic;
@@ -88,10 +93,47 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start/sidebar-end;
-  grid-row: 1/-1; }
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center; }
+  .sidebar__btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    height: 2px;
+    width: 4rem;
+    margin-top: 3.2rem; }
+  .sidebar__btn::after, .sidebar__btn::before {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 4rem;
+    background-color: #fff; }
+  .sidebar__btn::before {
+    transform: translateY(-1.2rem); }
+  .sidebar__btn::after {
+    transform: translateY(1rem); }
 
 .header {
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.85) 60%, rgba(198, 153, 99, 0.8) 100%), url("../img/hero.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  align-items: center;
+  padding: 4rem 4.8rem 8rem;
+  row-gap: 1.6rem;
+  justify-content: center; }
+  .header__logo {
+    height: 3.2rem;
+    justify-self: center; }
+  .header__btn {
+    align-self: start;
+    justify-self: start; }
+  .header__seenon-logos img {
+    height: 2.4rem; }
 
 .realtors {
   background-color: #101d2c;
