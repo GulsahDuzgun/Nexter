@@ -254,7 +254,9 @@ body {
   align-items: start; }
   @media only screen and (max-width: 40em) {
     .features {
-      margin: 9.6rem auto; } }
+      padding: 1.6rem 2.4rem;
+      margin: 9.6rem auto;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); } }
 
 .feature {
   display: grid;
@@ -263,14 +265,17 @@ body {
   grid-row-gap: 0.8rem; }
   @media only screen and (max-width: 40em) {
     .feature {
-      padding: 1.6rem 3.2rem;
-      grid-column-gap: 4.8rem;
+      padding: 1.6rem 2.4rem;
       grid-template-columns: min-content minmax(40rem, 1fr); } }
   .feature__icon {
     fill: #c69963;
     width: 3.2rem;
     height: 3.2rem;
     grid-row: 1 / span 2; }
+    @media only screen and (max-width: 40em) {
+      .feature__icon {
+        align-self: flex-start;
+        grid-column-gap: 2.4rem; } }
   .feature__text {
     font-size: 1.6rem; }
 

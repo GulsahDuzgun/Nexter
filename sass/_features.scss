@@ -9,7 +9,9 @@
   align-items: start;
 
   @media only screen and (max-width: $bp-small) {
+    padding: 1.6rem 2.4rem;
     margin: 9.6rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 }
 
@@ -20,8 +22,7 @@
   grid-row-gap: 0.8rem;
 
   @media only screen and (max-width: $bp-small) {
-    padding: 1.6rem 3.2rem;
-    grid-column-gap: 4.8rem;
+    padding: 1.6rem 2.4rem;
     grid-template-columns: min-content minmax(40rem, 1fr);
   }
 
@@ -30,6 +31,10 @@
     width: 3.2rem;
     height: 3.2rem;
     grid-row: 1 / span 2;
+    @media only screen and (max-width: $bp-small) {
+      align-self: flex-start;
+      grid-column-gap: 2.4rem;
+    }
   }
 
   &__text {
