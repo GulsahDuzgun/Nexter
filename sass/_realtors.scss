@@ -8,6 +8,11 @@
   align-items: center;
   row-gap: 2.8rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 /-1;
+    padding: 4.8rem auto;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
@@ -15,6 +20,19 @@
     row-gap: 5vh;
     column-gap: 1.6rem;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+      column-gap: 2.4rem;
+      margin-bottom: 4.8rem;
+      row-gap: 4vh;
+    }
+  }
+
+  &__heading-3 {
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 4.8rem;
+    }
   }
 }
 
