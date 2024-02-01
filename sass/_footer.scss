@@ -8,7 +8,7 @@
   display: grid;
   list-style: none;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.4rem;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 
   &__link:link,
