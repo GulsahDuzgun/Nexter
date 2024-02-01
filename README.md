@@ -1,10 +1,11 @@
 # Nexter
 
-_**What is Nexter project ?**_ Nexter is single page website which is a fictional real estate company. You can visit by clicking link &rarr; [Nexter](https://nexter-gldn.netlify.app/).
+_**What is Nexter project ?** Nexter is single page website which is a fictional real estate company. You can visit by clicking link &rarr; [Nexter](https://nexter-gldn.netlify.app/)._
 
 <br>
 
-###What did I learn during developing this project ?
+### What did I learn during developing this project ?
+
 _In these process I learn how can I use Sass , CSS Grid and Flexbox also with minmax() function in CSS Grid I could make grid items align without using media queries. This is awesome shortcut for placing items easily and efforless._
 <br>
 
