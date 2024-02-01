@@ -27,6 +27,10 @@
       margin-bottom: 4.8rem;
       row-gap: 4vh;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__heading-3 {

@@ -19,6 +19,10 @@
     grid-column: 1 /-1;
   }
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.8rem 3.2rem 3.2rem;
+  }
+
   &__logo {
     height: 3.2rem;
     justify-self: center;

@@ -28,7 +28,7 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content 40vw repeat(3, min-content); } }
+      grid-template-rows: 6rem calc(100vh - 6rem); } }
 
 /*
   SPACING SYSTEM (px)
@@ -161,6 +161,9 @@ body {
   @media only screen and (max-width: 50em) {
     .header {
       grid-column: 1 /-1; } }
+  @media only screen and (max-width: 50em) {
+    .header {
+      padding: 2.8rem 3.2rem 3.2rem; } }
   .header__logo {
     height: 3.2rem;
     justify-self: center; }
@@ -217,6 +220,9 @@ body {
         column-gap: 2.4rem;
         margin-bottom: 4.8rem;
         row-gap: 4vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .realtors__list {
+        grid-template-columns: min-content max-content; } }
   @media only screen and (max-width: 50em) {
     .realtors__heading-3 {
       margin-top: 4.8rem; } }
@@ -263,12 +269,20 @@ body {
   grid-template-rows: repeat(6, 1fr);
   align-items: center;
   justify-items: start; }
+  @media only screen and (max-width: 50em) {
+    .story__pictures {
+      grid-column: 1 /-1;
+      padding: 4.8rem 6.4rem; } }
 
 .story__img--1 {
   width: 100%;
   grid-column: 2 / 6;
   grid-row: 2 / 6;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 50em) {
+    .story__img--1 {
+      grid-column: 1 / 5;
+      grid-row: 1 / -1; } }
 
 .story__img--2 {
   width: 115%;
@@ -276,6 +290,10 @@ body {
   grid-column: 4 / 7;
   grid-row: 4 / 6;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 50em) {
+    .story__img--2 {
+      grid-row: 1 /-1;
+      width: 100%; } }
 
 .story__content {
   background-color: #f9f7f6;
@@ -285,6 +303,10 @@ body {
   align-content: center;
   justify-items: start;
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .story__content {
+      grid-column: 1 /-1;
+      grid-row: 5 / 6; } }
 
 .story__text {
   font-size: 1.5rem;
