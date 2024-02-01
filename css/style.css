@@ -134,7 +134,8 @@ body {
     height: 2px;
     width: 4rem;
     background-color: #fff;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    background-size: 4rem 2px; }
   .sidebar__btn::before {
     transform: translateY(-1.2rem); }
     @media only screen and (max-width: 62.25em) {
@@ -220,12 +221,17 @@ body {
         column-gap: 2.4rem;
         margin-bottom: 4.8rem;
         row-gap: 4vh; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40em) {
       .realtors__list {
-        grid-template-columns: min-content max-content; } }
+        grid-template-columns: min-content max-content;
+        row-gap: 9vh;
+        margin-bottom: 6.4rem; } }
   @media only screen and (max-width: 50em) {
     .realtors__heading-3 {
       margin-top: 4.8rem; } }
+  @media only screen and (max-width: 40em) {
+    .realtors__heading-3 {
+      margin-top: 6.4rem; } }
 
 .realtor__img {
   display: block;
@@ -246,12 +252,20 @@ body {
   grid-template-rows: auto auto;
   gap: 4rem 6rem;
   align-items: start; }
+  @media only screen and (max-width: 40em) {
+    .features {
+      margin: 9.6rem auto; } }
 
 .feature {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-column-gap: 1.6rem;
   grid-row-gap: 0.8rem; }
+  @media only screen and (max-width: 40em) {
+    .feature {
+      padding: 1.6rem 3.2rem;
+      grid-column-gap: 4.8rem;
+      grid-template-columns: min-content minmax(40rem, 1fr); } }
   .feature__icon {
     fill: #c69963;
     width: 3.2rem;
@@ -319,6 +333,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 4rem 8rem; }
+  @media only screen and (max-width: 40em) {
+    .homes {
+      margin: 9.6rem auto;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem)); } }
 
 .home {
   display: grid;
